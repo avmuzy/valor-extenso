@@ -34,7 +34,6 @@ else:
     valor1 = int(num[0])
     print(f"{dicionario['100 a 900'][valor1]}", end=' ')
     valor2 = int(num[1]) -2
-
     if valor2 > 0:
       print(f"e {dicionario['20 a 99'][valor2]}", end=' ')
     valor3 = int(num[2])
