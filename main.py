@@ -30,7 +30,13 @@ if int(num) in range(20, 100):
 if int(num) in range(100, 1000):
   if int(num) == 100:
     print('cem')
- else:
+else:
     valor1 = int(num[0])
     print(f"{dicionario['100 a 900'][valor1]}", end=' ')
     valor2 = int(num[1]) -2
+
+    if valor2 > 0:
+      print(f"e {dicionario['20 a 99'][valor2]}", end=' ')
+    valor3 = int(num[2])
+    if valor3 > 0:
+      print(f"e {dicionario['0 a 9'][valor3]}")
