@@ -27,3 +27,6 @@ if int(num) in range(20, 100):
   valor2 = int(num[1])
   if valor2 > 0:
     print(f"e {dicionario['0 a 9'][valor2]}")
+if int(num) in range(100, 1000):
+  if int(num) == 100:
+    print('cem')
