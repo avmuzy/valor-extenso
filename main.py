@@ -1,6 +1,6 @@
 while True:
   try:
-    num = input('Digite um número inteiro de 0 a 999: ')
+    num = input('Digiget um numero de 1 a 999: ')
     if int(num) < 0:
       print('Digite um número inteiro de 0 a 999')
     else:
@@ -9,7 +9,6 @@ while True:
     print('Digite um número inteiro de 0 a 999')
 
 dicionario = {}
-
 dicionario['0 a 9'] =['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove']
 dicionario['10 a 19'] = ['dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove']
 dicionario['20 a 99'] = ['vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa']
@@ -20,8 +19,8 @@ if int(num) in range(0, 10):
   print(dicionario['0 a 9'][valor])
 
 if int(num) in range(10, 20):
-    valor = int(num[1])
-    print(dicionario['10 a 19'][valor])
+  valor = int(num[1])
+  print(dicionario['10 a 19'][valor])
 
 if int(num) in range(20, 100):
   valor1 = int(num[0]) - 2
@@ -29,10 +28,11 @@ if int(num) in range(20, 100):
   valor2 = int(num[1])
   if valor2 > 0:
     print(f"e {dicionario['0 a 9'][valor2]}")
+
 if int(num) in range(100, 1000):
   if int(num) == 100:
     print('cem')
-else:
+  else:
     valor1 = int(num[0])
     print(f"{dicionario['100 a 900'][valor1]}", end=' ')
     valor2 = int(num[1]) -2
