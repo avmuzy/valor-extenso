@@ -9,10 +9,12 @@ while True:
     print('Digite um número inteiro de 0 a 999')
 
 dicionario = {}
+
 dicionario['0 a 9'] =['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove']
 dicionario['10 a 19'] = ['dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove']
 dicionario['20 a 99'] = ['vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta', 'oitenta', 'noventa']
 dicionario['100 a 900'] = ['cem', 'cento', 'duzentos', 'trezentos', 'quatrocentos', 'quinhentos', 'seiscentos', 'setecentos', 'oitocentos', 'novecentos']
+
 if int(num) in range(0, 10):
   valor = int(num[0])
   print(dicionario['0 a 9'][valor])
