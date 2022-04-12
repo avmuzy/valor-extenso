@@ -7,3 +7,6 @@ layout = [[sg.Text('Escreva abaixo um numero entre 0 e 999:'),
           [sg.Input(key='-IN-')],
           [sg.Button('Escrever'), sg.Button('Sair ')]]
 
+window = sg.Window('Numero por extenso ', layout)
+
+window.close()
